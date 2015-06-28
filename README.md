@@ -31,7 +31,7 @@ class SelectPreviousWordCommand(sublime_plugin.TextCommand):
 Then, in your VoiceCode user commands, you can call this Sublime Text command as follows:
 
 ```coffeescript
-@exic "subl --command 'select_previous_word'"
+@exec "subl --command 'select_previous_word'"
 ```
 
 
