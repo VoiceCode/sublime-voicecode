@@ -29,14 +29,18 @@ class SelectPreviousWordCommand(sublime_plugin.TextCommand):
 Then, in your VoiceCode user commands, you can call this Sublime Text command as follows:
 
 ```coffeescript
-@exec "subl --command 'select_previous_word'"
+@sublime().do('select_previous_word')
 ```
 
-
-### Triggering existing Sublime Text commands
-
-In VoiceCode simply do something like:
+or if you need to pass options/arguments to a Sublime command, add them as the second parameter like:
 
 ```coffeescript
-@exec "subl --command 'goto_line {\"line\": 10}'"
+@sublime().do('some_command', {foo: "bar", baz: 3.2})
+```
+### Triggering existing Sublime Text commands
+
+Sublime has a lot of builtin commands. To trigger them from VoiceCode simply do something like:
+
+```coffeescript
+@sublime().do('goto_line', {line: 10})
 ```
