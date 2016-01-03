@@ -1,10 +1,8 @@
 # VoiceCode / Sublime Text (2|3) Integration Package
 
-This package integrates VoiceCode http://voicecode.io with Sublime Text https://www.sublimetext.com
+This is a Sublime Text plugin that lets [VoiceCode](http://voicecode.io) control [Sublime Text](https://www.sublimetext.com)
 
-This integration is needed because many VoiceCode voice commands are more sophisticated than simply pressing keys. For example, a command like "select next curly brace".
-
-The integration is handled via Sublime Text's command line utility: `subl`
+This integration is needed because many VoiceCode voice commands are more sophisticated than simply pressing keys or clicking the mouse. For example, a command that *selects the next curly brace*, or a command that *extends the current selection(s) forward until the next comma*, etc.
 
 ## Setup
 
