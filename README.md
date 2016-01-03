@@ -44,3 +44,5 @@ Sublime has a lot of builtin commands. To trigger them from VoiceCode simply do 
 ```coffeescript
 @sublime().do('goto_line', {line: 10})
 ```
+
+Checkout [this page](http://docs.sublimetext.info/en/latest/reference/commands.html#discovering-commands) for more info about Sublime commands.
